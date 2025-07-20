@@ -18,3 +18,5 @@ buildNumber.properties
 
 # intellij
 .idea
+mvnw
+mvnw.cmd
