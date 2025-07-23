@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: expense-tracker
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        format_sql: true
+  flyway:
+    enabled: ${FLYWAY_ENABLED:true}

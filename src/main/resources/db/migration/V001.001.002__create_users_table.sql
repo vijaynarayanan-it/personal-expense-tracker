@@ -1,0 +1,8 @@
+CREATE TABLE expense_tracker.users (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    email VARCHAR(320) NOT NULL UNIQUE,
+    password VARCHAR(72) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
